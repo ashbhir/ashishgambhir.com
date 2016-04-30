@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="A web portal containing some amazing webiste designs, stock photographs and javascript css projects from Ashish Gambhir, a web front end developer"/>
+    <title>Ashish Gambhir- Frontend Developer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="ag_icon.ico" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body ng-app="ashishApp">
+
+    <header>
+      <h1><a href="#/">Ashish Gambhir</a></h1>
+      <div class="divider"></div>
+      <ul class="nav">
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/designing">Designing</a></li>
+        <li><a href="#/coding">Coding</a></li>       
+        <li><a href="https://www.flickr.com/photos/100134077@N04/">Photography</a></li>
+        <li><a target="_blank" href="assets/Resume_Ashish_Gambhir.pdf">Resume</a></li>
+        <!-- <li><a href="https://medium.com/@ashishgambhir">Blog</a></li> -->
+        <li><a target="_blank" href="mailto:ashish.gambhir99@yahoo.in">Reach out</a></li>
+      </ul>
+    </header>
+    <main>
+      <ng-view></ng-view>
+      
+    </main>
+
+    <footer>
+      <div class="quick-links">
+        <p>Quick Links</p>
+        <ul>
+          <li><a href="#/">Home</a></li>        
+          <li><a href="#/designing">Designing</a></li>
+          <li><a href="#/coding">Coding</a></li>
+          <li><a href="https://www.flickr.com/photos/100134077@N04/">Photography</a></li>          
+          <li><a target="_blank" href="assets/Resume_Ashish_Gambhir.pdf">Resume</a></li>
+          <!-- <li><a href="https://medium.com/@ashishgambhir">Blog</a></li> -->
+          
+        </ul>
+      </div>
+      <div class="connect">
+        <p>Connect</p>
+        <ul>
+          <li><a href="https://in.linkedin.com/in/ashishgambhir2"><span class="linkedin"></span></a></li>
+          <li><a href="https://twitter.com/ashbhir"><span class="twitter"></span></a></li>
+          <li><a href="https://www.facebook.com/ashish.gambhir1"><span class="facebook"></span></a></li>
+          <li><a href="https://www.flickr.com/photos/100134077@N04/"><span class="flickr"></span></a></li>
+          <li><a href="http://codepen.io/ashbhir/"><span class="codepen"></span></a></li>
+          <li><a href="https://medium.com/@ashishgambhir"><span class="medium"></span></a></li>
+        </ul>
+        <!-- <p class="hire">Am available for hire</p> -->
+      </div>
+      <p class="copyright">&copy; Copyright 2016- All the designs you see in the website are 100% original and prepared by me</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js"></script>
+    <script src="js/routes.js"></script>
+  </body>
+</html>
